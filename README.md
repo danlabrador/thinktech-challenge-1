@@ -12,7 +12,7 @@ To run the tests, you'll need to use the terminal (Linux/macOS) or Command Promp
 
 1. **Open your terminal or command prompt.**
 
-2. **Navigate to your project directory.** If your project is on your Desktop and named "PythonActivities", you would type:
+2. **Navigate to your project directory.** If your project is on your Desktop and named "thinktech-challenge-1", you would type:
    ```bash
    cd Desktop/thinktech-challenge-1
    ```
