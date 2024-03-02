@@ -17,8 +17,4 @@ def calculate_operations(num1, num2):
     # Calculate difference
     # Format and return the results as a string
 
-    sum = num1 + num2
-    product = num1 * num2
-    difference = num1 - num2
-    return f"Sum: {sum}, Product: {product}, Difference: {difference}" 
     return ""  # Placeholder return statement. Update this with your actual return statement.
