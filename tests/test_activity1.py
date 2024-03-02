@@ -10,7 +10,7 @@ from activity1 import calculate_operations
 
 # Descriptive testing using the improved test_utils.py
 if __name__ == "__main__":
-    test = describe("#1: calculate_operations()")
+    test = describe("1: Calculate Operations")
 
     # Test adding positive numbers
     test("Adding positive numbers", calculate_operations, "Sum: 8, Product: 15, Difference: 2", 5, 3)
@@ -32,12 +32,12 @@ if __name__ == "__main__":
     # Test with decimal numbers
     test("Adding decimal numbers", calculate_operations, "Sum: 5.5, Product: 7.26, Difference: 1.0999999999999996", 3.3, 2.2)
     # Test with very small numbers
-    test("Working with small decimal numbers", calculate_operations, "Sum: 0.2, Product: 0.0405, Difference: 0.1", 0.15, 0.05)
+    test("Working with small decimal numbers", calculate_operations, "Sum: 0.2, Product: 0.0075, Difference: 0.09999999999999999", 0.15, 0.05)
     # Test with one very large and one small number
-    test("One large and one small number", calculate_operations, "Sum: 100000.05, Product: 5000.0025, Difference: 99999.95", 100000, 0.05)
+    test("One large and one small number", calculate_operations, "Sum: 100000.05, Product: 5000.0, Difference: 99999.95", 100000, 0.05)
     # Test where difference is zero
     test("Difference resulting in zero", calculate_operations, "Sum: 10, Product: 25, Difference: 0", 5, 5)
     # Test addition leading to a round number
-    test("Addition leading to a round number", calculate_operations, "Sum: 100, Product: 2450, Difference: 30", 65, 35)
+    test("Addition leading to a round number", calculate_operations, "Sum: 100, Product: 2275, Difference: 30", 65, 35)
     # Test with negative decimal numbers
-    test("Adding negative decimal numbers", calculate_operations, "Sum: -5.5, Product: 7.56, Difference: -0.9", -3.3, -2.2)
+    test("Adding negative decimal numbers", calculate_operations, "Sum: -5.5, Product: 7.26, Difference: -1.0999999999999996", -3.3, -2.2)

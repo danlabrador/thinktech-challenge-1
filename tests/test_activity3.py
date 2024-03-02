@@ -10,7 +10,7 @@ from activity3 import categorize_age
 
 # Descriptive testing for Activity 3
 if __name__ == "__main__":
-    test = describe("Activity 3: Categorize Age Functionality")
+    test = describe("3: Categorize Age")
 
     # Test with ages for a minor
     test("Age below 18 should categorize as Minor", categorize_age, "Minor", 17)

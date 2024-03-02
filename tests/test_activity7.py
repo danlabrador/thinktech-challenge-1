@@ -17,7 +17,7 @@ questions = [
 
 # Descriptive testing for Activity 7
 if __name__ == "__main__":
-    test = describe("Activity 7: Quiz Game Functionality")
+    test = describe("7: Quiz Game Functionality")
 
     # Test with all correct answers
     test("All answers correct", run_quiz, 3, questions, ["Paris", "4", "H2O"])
@@ -31,4 +31,3 @@ if __name__ == "__main__":
     # Test with no answers (simulating no input/skipped questions)
     test("No answers provided", run_quiz, 0, questions, ["", "", ""])
 
-    # Additional custom test cases...

@@ -10,7 +10,7 @@ from activity4 import process_list
 
 # Descriptive testing for Activity 4
 if __name__ == "__main__":
-    test = describe("Activity 4: process_list Functionality")
+    test = describe("4: Process List")
 
     # Test with a typical list
     test("Processing a typical list", process_list, (6, [3, 2, 1]), [1, 2, 3])
@@ -41,5 +41,3 @@ if __name__ == "__main__":
 
     # Test with a list of large numbers
     test("Processing a list of large numbers", process_list, (10000000, [5000000, 5000000]), [5000000, 5000000])
-
-    # Additional custom test cases...

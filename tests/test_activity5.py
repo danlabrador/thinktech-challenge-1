@@ -10,7 +10,7 @@ from activity5 import format_data
 
 # Descriptive testing for Activity 5
 if __name__ == "__main__":
-    test = describe("Activity 5: format_data Functionality")
+    test = describe("5: Format Data")
 
     # Test with typical data
     test("Formatting with typical data", format_data, 
@@ -47,4 +47,22 @@ if __name__ == "__main__":
          "Maximiliana Constantine the Third is 89 years old and loves the color ultraviolet.", 
          ("Maximiliana", "Constantine the Third", 89), {"favorite_color": "ultraviolet"})
 
-    # Additional custom test cases...
+    # Test with non-integer age
+    test("Formatting with non-integer age", format_data, 
+      "John Doe is 30.5 years old and loves the color blue.", 
+      ("John", "Doe", 30.5), {"favorite_color": "blue"})
+
+    # Test with missing age
+    test("Formatting with missing age", format_data, 
+      "John Doe is years old and loves the color blue.", 
+      ("John", "Doe"), {"favorite_color": "blue"})
+
+    # Test with missing favorite color
+    test("Formatting with missing favorite color", format_data, 
+      "John Doe is 30 years old and loves the color .", 
+      ("John", "Doe", 30), {})
+
+    # Test with additional information
+    test("Formatting with additional information", format_data, 
+      "John Doe is 30 years old and loves the color blue. Occupation: Engineer", 
+      ("John", "Doe", 30), {"favorite_color": "blue", "occupation": "Engineer"})
